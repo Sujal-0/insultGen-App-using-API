@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+    
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1645655892437-c5149679d223?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.8); /* Darken the background slightly */
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#center {
+    height: 550px;
+    width: 450px;
+    border: 4px solid black;
+    border-radius: 12px; /* Reduced border radius */
+    background-color: transparent;
+    border-image: linear-gradient(45deg, #8B0000, #330033) 1; /* Darker gradient border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle glow effect */
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px;
+}
+
+.text h2{
+    margin-top: 10px;
+    position: relative;
+    font-weight: 900;
+    font-size: 2.5vw;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+#card {
+    max-width: 380px;
+    max-height: 320px;
+    margin-top: 12%;
+    padding: 5px;
+    overflow: auto;
+    
+}
+
+#card p {
+    color: #dadada;
+    font-size: 1.4vw;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+#reloadButton button {
+    position: absolute;
+    font-weight: bold;
+    left: 46.5%;
+    bottom: 18%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#reloadButton button:hover {
+    background-color: #490505e6;
+    color: black; /* White text on hover */
+}
+
